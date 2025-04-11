@@ -1,2 +1,2 @@
-# CIjfer rekenmachine in Python
+# Cijfer rekenmachine in Python
 Een Project om een cijfer rekenmachine te maken met Python.
