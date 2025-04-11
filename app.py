@@ -1,5 +1,4 @@
 # (Error) Variabelen
-start = 1
 error_vraag = "Error: Vraag niet (juist) beantwoord!"
 error_negatief_nummer = "Error: Gewicht is negatief!"
 
