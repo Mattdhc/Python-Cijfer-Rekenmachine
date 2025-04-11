@@ -1,2 +1,2 @@
 # Cijfer rekenmachine in Python
-Een Project om een cijfer rekenmachine te maken met Python.
+Een Project om gemiddelde van cijfers uit te rekenen in Python.
