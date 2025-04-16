@@ -1,6 +1,5 @@
 # (Error) Variabelen
 error_vraag = "Error: Vraag niet (juist) beantwoord!"
-error_negatief_nummer = "Error: Gewicht is negatief!"
 
 # Functies
 # Functie om gemiddelde te berekenen als de gebruiker om een nog een cijfer toe te voegen met gewichten
@@ -25,7 +24,7 @@ def opnieuw_gewichten_berekenen():
         opnieuw_gewichten_berekenen()
     if nogeencijfer == "Nee" or nogeencijfer == "nee":
         exit()
-    else:
+    if nogeencijfer != "Ja" or not "ja" or not "Nee" or not "nee":
         print(error_vraag)
 
 # Functie om gemiddelde te berekenen als de gebruiker om een nog een cijfer toe te voegen
@@ -49,7 +48,7 @@ def opnieuw_cijfers_berekenen():
         opnieuw_cijfers_berekenen()
     if nogeencijfer == "Nee" or nogeencijfer == "nee":
         exit()
-    else:
+    if nogeencijfer != "Ja" or not "ja" or not "Nee" or not "nee":
         print(error_vraag)
 
 # Vraagt aan de gebruiker of hij/zij verschillende gewichten wilt gebruiken
@@ -75,9 +74,8 @@ if vraag_gewichten == "Ja" or vraag_gewichten == "ja":
         opnieuw_gewichten_berekenen()
     if nogeencijfer == "Nee" or nogeencijfer == "nee":
         exit()
-    else:
+    if nogeencijfer != "Ja" or not "ja" or not "Nee" or not "nee":
         print(error_vraag)
-
 
 # Start het programma die het gemiddelde cijfer berekent 
 if vraag_gewichten == "Nee" or vraag_gewichten == "nee":
@@ -99,5 +97,8 @@ if vraag_gewichten == "Nee" or vraag_gewichten == "nee":
         opnieuw_cijfers_berekenen()
     if nogeencijfer == "Nee" or nogeencijfer == "nee":
         exit()
-    else:
+    if nogeencijfer != "Ja" or not "ja" or not "Nee" or not "nee":
         print(error_vraag)
+
+if vraag_gewichten != "Ja" or not "ja" or not "Nee" or not "nee":
+    print(error_vraag)
