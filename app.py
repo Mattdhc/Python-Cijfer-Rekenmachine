@@ -3,6 +3,7 @@ error_vraag = "Error: Vraag niet (juist) beantwoord!"
 error_negatief_nummer = "Error: Gewicht is negatief!"
 
 # Functies
+# Functie om gemiddelde te berekenen als de gebruiker om een nog een cijfer toe te voegen met gewichten
 def opnieuw_gewichten_berekenen():
     global vorig_totaal_gewicht
     global vorig_totaal_cijfer
@@ -27,6 +28,7 @@ def opnieuw_gewichten_berekenen():
     else:
         print(error_vraag)
 
+# Functie om gemiddelde te berekenen als de gebruiker om een nog een cijfer toe te voegen
 def opnieuw_cijfers_berekenen():
     global vorig_totaal_gewicht
     global vorig_totaal_cijfer
@@ -53,7 +55,7 @@ def opnieuw_cijfers_berekenen():
 # Vraagt aan de gebruiker of hij/zij verschillende gewichten wilt gebruiken
 vraag_gewichten = str(input("Wilt u gewichten per vak invullen? (Ja of Nee) "))
 
-# Maakt een functie die het gemiddelde cijfer berekent met verschillende gewichten per vak
+# Start het programma die het gemiddelde cijfer berekent met verschillende gewichten per vak
 if vraag_gewichten == "Ja" or vraag_gewichten == "ja":
     vak = input("Wat is het vak waarvan uw het gemiddelde wilt berekenen? ")
     globals()[vak] = 25
@@ -77,7 +79,7 @@ if vraag_gewichten == "Ja" or vraag_gewichten == "ja":
         print(error_vraag)
 
 
-# Maakt een functie die het gemiddelde cijfer berekent 
+# Start het programma die het gemiddelde cijfer berekent 
 if vraag_gewichten == "Nee" or vraag_gewichten == "nee":
     vak = input("Wat is het vak waarvan uw het gemiddelde wilt berekenen? ")
     globals()[vak] = 25
